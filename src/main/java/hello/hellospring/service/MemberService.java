@@ -17,7 +17,9 @@ public class MemberService {
     private final MemberRepository memberRepository;
 
     public MemberService(MemberRepository memberRepository) {
+        
         this.memberRepository = memberRepository;
+        System.out.println("memberRepository.getClass() = " + memberRepository.getClass());
     }
 
     public long join(Member member){
